@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+        <ImageView
+            android:id="@+id/weekwhere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/weekwhereeat"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/wherego"
+            android:text="周末去哪吃"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/weekwhere"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#C1C1C1"
+            android:layout_below="@id/wherego"
+            android:layout_toRightOf="@id/weekwhere"
+            android:text="[管家自营]和好玩的人吃好吃的，精选美食活动。"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c1c1c1"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+        <ImageView
+            android:id="@+id/cardgo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/cratree"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/cardgowhere"
+            android:text="汽车票"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/cardgo"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/subtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#C1C1C1"
+            android:layout_below="@id/cardgowhere"
+            android:layout_toRightOf="@id/cardgo"
+            android:text="北京官方独家授权"/>
+    </RelativeLayout>
+
+</LinearLayout>
