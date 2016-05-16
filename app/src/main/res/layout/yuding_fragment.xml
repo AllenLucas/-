@@ -112,7 +112,7 @@
             android:gravity="end"
             android:textColor="#B4B4B4"/>
     </LinearLayout>
-    <LinearLayout
+    <RadioGroup
         android:id="@+id/layout2"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
@@ -145,7 +145,7 @@
             android:textSize="20sp"
             android:gravity="end"
             android:text="鞍山"/>
-    </LinearLayout>
+    </RadioGroup>
     <View
         android:layout_margin="10dp"
         android:id="@+id/lin2"
@@ -192,6 +192,7 @@
             android:gravity="center"
             android:layout_marginLeft="5dp"/>
         <RadioButton
+            android:id="@+id/xuesheng"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="学生票"
@@ -203,13 +204,14 @@
     </LinearLayout>
 
 </RelativeLayout>
-    <RadioGroup
+    <RelativeLayout
+        android:id="@+id/sousuog"
         android:orientation="vertical"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:background="#528FDD">
+        android:background="@color/colorPrimary">
         <RadioButton
             android:id="@+id/sousuo"
             android:layout_width="wrap_content"
@@ -219,11 +221,16 @@
             android:textColor="#fff"
             android:layout_gravity="center_horizontal"
             android:button="@mipmap/sousuo_icon"
-            android:gravity="center"/>
-    </RadioGroup>
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
     <ListView
         android:id="@+id/dislist"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></ListView>
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:scrollbars="none"
+        ></ListView>
 
 </LinearLayout>
